@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://with.kiransaju.workers.dev/</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
+  <url><loc>https://www.kiransaju.in/</loc></url>
+  <url><loc>https://www.kiransaju.in/services/web-development-kerala.html</loc></url>
+  <url><loc>https://www.kiransaju.in/services/seo-services-kerala.html</loc></url>
+  <url><loc>https://www.kiransaju.in/services/digital-marketing-kerala.html</loc></url>
+  <url><loc>https://www.kiransaju.in/services/social-media-marketing-kerala.html</loc></url>
+  <url><loc>https://www.kiransaju.in/services/content-creation-kerala.html</loc></url>
 </urlset>
