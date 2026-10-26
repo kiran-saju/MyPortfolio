@@ -1,0 +1,585 @@
+
+/* =====================================================
+   KIRAN SAJU - GOOGLE REVIEWS & TESTIMONIALS
+   Website: www.kiransaju.in
+
+   Clean, consolidated stylesheet
+   Brand Color: #0f766e
+   ===================================================== */
+
+
+/* ==============================
+   1. TESTIMONIALS SECTION
+   ============================== */
+
+.testimonials-section {
+    padding: 3.8rem 0;
+}
+
+.reviews-overview {
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr;
+    gap: 1.15rem;
+    align-items: stretch;
+}
+
+
+/* ==============================
+   2. OVERVIEW PANELS
+   ============================== */
+
+.reviews-score-panel,
+.reviews-intro-panel {
+    min-width: 0;
+    padding: clamp(1.35rem, 3vw, 2.3rem);
+    border: 1px solid #d7e8e2;
+    border-radius: 26px;
+}
+
+
+/* ==============================
+   3. GOOGLE RATING PANEL
+   ============================== */
+
+.reviews-score-panel {
+    background: linear-gradient(
+        145deg,
+        #123b37,
+        #0b615b
+    );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 16px 36px rgba(13, 54, 50, 0.13);
+}
+
+.reviews-source-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    font-size: 0.87rem;
+    font-weight: 800;
+    color: #d2f2e9;
+}
+
+.reviews-source-label i {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.reviews-score-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+
+    margin: 1.2rem 0 0.75rem;
+}
+
+.reviews-score {
+    font-family: Outfit, Inter, sans-serif;
+    font-size: clamp(3.8rem, 6vw, 5.1rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.07em;
+}
+
+.reviews-score span {
+    font-size: 0.28em;
+    font-weight: 650;
+    letter-spacing: 0;
+    color: #c6e8df;
+}
+
+.reviews-stars {
+    color: #ffd17a;
+    font-size: 1.2rem;
+    letter-spacing: 0.13em;
+    line-height: 1.1;
+}
+
+.reviews-count {
+    margin-top: 0.4rem;
+
+    color: #e2f3ed;
+    font-size: 0.9rem;
+    font-weight: 750;
+}
+
+.reviews-asof {
+    margin: 0.9rem 0 1.2rem;
+
+    color: #bcdcd3;
+    font-size: 0.75rem;
+    line-height: 1.55;
+}
+
+
+/* ==============================
+   4. GOOGLE REVIEWS BUTTON
+   ============================== */
+
+.reviews-google-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+
+    padding: 0.78rem 1.1rem;
+
+    background: #ffffff;
+    border-radius: 999px;
+
+    color: #0b655e;
+    font-size: 0.86rem;
+    font-weight: 850;
+    text-decoration: none;
+
+    transition:
+        transform 0.18s ease,
+        background 0.18s ease;
+}
+
+.reviews-google-link:hover {
+    transform: translateY(-2px);
+    background: #e9f6f2;
+}
+
+.reviews-google-link:focus-visible {
+    outline: 3px solid #a3e4d7;
+    outline-offset: 3px;
+}
+
+
+/* ==============================
+   5. INTRODUCTION PANEL
+   ============================== */
+
+.reviews-intro-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(
+        160deg,
+        #ffffff 0%,
+        #eaf5f1 100%
+    );
+}
+
+.reviews-intro-icon {
+    display: grid;
+    place-items: center;
+
+    width: 47px;
+    height: 47px;
+
+    margin-bottom: 1rem;
+
+    background: #d6eee7;
+    border-radius: 14px;
+
+    color: #0f766e;
+    font-size: 1.3rem;
+}
+
+.reviews-intro-panel h3 {
+    font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+    line-height: 1.2;
+}
+
+.reviews-intro-panel p {
+    max-width: 50ch;
+    margin-top: 0.65rem;
+    line-height: 1.75;
+}
+
+.reviews-contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-start;
+
+    margin-top: 1.15rem;
+
+    color: #0f766e;
+    font-size: 0.89rem;
+    font-weight: 850;
+    text-decoration: none;
+}
+
+.reviews-contact-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   6. REVIEWS GRID
+   ============================== */
+
+.review-cards:not([hidden]) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+    align-items: start;
+
+    margin-top: 24px;
+}
+
+.review-cards[hidden] {
+    display: none;
+}
+
+
+/* ==============================
+   7. COMPACT REVIEW CARD
+   ============================== */
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 10px;
+
+    min-width: 0;
+    min-height: 0;
+
+    padding: 20px;
+
+    background: #ffffff;
+    border: 1px solid #dce9e5;
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 18px rgba(13, 54, 50, 0.045);
+
+    transition:
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.review-card:hover {
+    border-color: #b7dcd3;
+
+    box-shadow:
+        0 10px 28px rgba(13, 54, 50, 0.09);
+}
+
+
+/* ==============================
+   8. CARD HEADER
+   ============================== */
+
+.review-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.review-card-stars {
+    color: #d39522;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.review-card-source {
+    color: #71817c;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* ==============================
+   9. REVIEW TEXT PREVIEW
+   ============================== */
+
+.review-card-quote {
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    color: #344741;
+    font-size: 14px;
+    line-height: 1.65;
+
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+
+/* ==============================
+   10. EXPANDED REVIEW
+   ============================== */
+
+.review-card-quote.is-expanded {
+    display: block;
+
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+
+    overflow: visible;
+}
+
+
+/* ==============================
+   11. READ MORE / READ LESS
+   ============================== */
+
+.review-read-more {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+
+    padding: 2px 0;
+    margin: 0;
+
+    border: none;
+    background: transparent;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 800;
+
+    color: #0f766e;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease;
+}
+
+.review-read-more:hover {
+    color: #084f49;
+    text-decoration: underline;
+}
+
+.review-read-more:focus-visible {
+    outline: 2px solid #0f766e;
+    outline-offset: 4px;
+}
+
+.review-read-more[hidden] {
+    display: none;
+}
+
+
+/* ==============================
+   12. CARD FOOTER
+   ============================== */
+
+.review-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 4px;
+    padding-top: 12px;
+
+    border-top: 1px solid #edf3f0;
+}
+
+.review-card-name {
+    color: #182c28;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.review-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #0f766e;
+    font-size: 12px;
+    font-weight: 750;
+
+    text-decoration: none;
+}
+
+.review-card-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   13. VIEW ALL REVIEWS BUTTON
+   ============================== */
+
+.reviews-view-all {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 28px;
+}
+
+.reviews-view-all .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+}
+
+
+/* ==============================
+   14. DEDICATED REVIEWS PAGE
+   ============================== */
+
+.all-reviews-page {
+    padding: 3.5rem 0;
+}
+
+.all-reviews-hero {
+    max-width: 850px;
+    margin-bottom: 2rem;
+}
+
+.all-reviews-hero h1 {
+    margin: 0.6rem 0 1rem;
+
+    font-family: Outfit, Inter, sans-serif;
+    font-size: clamp(2.3rem, 5vw, 3.7rem);
+
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.all-reviews-hero p {
+    max-width: 690px;
+    line-height: 1.8;
+}
+
+.all-reviews-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.all-reviews-page .review-cards:not([hidden]) {
+    margin-top: 2rem;
+}
+
+
+/* ==============================
+   15. TABLET RESPONSIVENESS
+   ============================== */
+
+@media (max-width: 900px) {
+
+    .reviews-overview {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .review-cards:not([hidden]) {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==============================
+   16. MOBILE RESPONSIVENESS
+   ============================== */
+
+@media (max-width: 600px) {
+
+    .testimonials-section,
+    .all-reviews-page {
+        padding: 2.4rem 0;
+    }
+
+    .reviews-score-panel,
+    .reviews-intro-panel {
+        padding: 1.25rem;
+        border-radius: 20px;
+    }
+
+    .reviews-score-line {
+        gap: 1rem;
+    }
+
+    .reviews-score {
+        font-size: 3.7rem;
+    }
+
+    .review-cards:not([hidden]) {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 20px;
+    }
+
+    .review-card {
+        padding: 17px;
+        border-radius: 16px;
+    }
+
+    .review-card-quote {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .review-card-footer {
+        align-items: flex-start;
+    }
+
+    .reviews-view-all {
+        margin-top: 24px;
+    }
+
+    .reviews-view-all .btn {
+        width: 100%;
+    }
+
+    .all-reviews-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .all-reviews-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
+/* ==============================
+   17. REDUCED MOTION
+   ============================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .review-card,
+    .reviews-google-link,
+    .review-read-more {
+        transition: none;
+    }
+
+    .reviews-google-link:hover {
+        transform: none;
+    }
+
+}

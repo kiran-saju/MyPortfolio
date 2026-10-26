@@ -88,6 +88,7 @@
   <!-- Font Awesome 6 (free) -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <link href="assets/site.css" rel="stylesheet"/>
+  <link href="assets/reviews.css" rel="stylesheet"/>
   <meta content="1200" property="og:image:width"/>
   <meta content="630" property="og:image:height"/>
   <meta content="Kiran Saju" name="author"/>
@@ -97,47 +98,58 @@
   <a class="skip-link" href="#main">
    Skip to content
   </a>
-  <header id="site-header">
-   <div class="container">
-    <nav aria-label="Primary navigation" class="nav">
-     <a class="brand" href="#home">
-      <span class="name">
-       Kiran Saju
-      </span>
-     </a>
-     <!-- Mobile toggle -->
-     <button aria-controls="primaryNav" aria-expanded="false" class="nav-toggle" id="navToggle">
-      <i class="fa-solid fa-bars">
-      </i>
-      <span>
-       Menu
-      </span>
-     </button>
-     <div class="nav-links" id="primaryNav">
-      <a href="#about">
-       About
+  
+<!-- PREMIUM NAVBAR -->
+<header id="site-header">
+  <div class="container">
+
+    <nav class="nav" aria-label="Primary navigation">
+
+      <!-- BRAND -->
+      <a class="brand" href="#home"
+         aria-label="Kiran Saju, back to home">
+        <span class="name">Kiran Saju</span>
+        <span class="brand-caption">
+          WEB · SEO · DIGITAL
+        </span>
       </a>
-      <a href="#projects">
-       Projects
-      </a>
-      <a href="#services">
-       Services
-      </a>
-      <a href="#skills">
-       Skills
-      </a>
-      <a href="#contact">
-       Contact
-      </a>
-      <a class="btn btn-outline" href="#contact">
-       <i class="fa-regular fa-paper-plane">
-       </i>
-       Hire me
-      </a>
-     </div>
+
+      <!-- MOBILE MENU -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-controls="primaryNav"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"
+           aria-hidden="true"></i>
+        <span>Menu</span>
+      </button>
+
+      <!-- NAVIGATION -->
+      <div class="nav-links" id="primaryNav">
+
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+
+        <a class="nav-cta" href="#contact">
+          <i class="fa-regular fa-paper-plane"
+             aria-hidden="true"></i>
+          Start a project
+        </a>
+
+      </div>
+
     </nav>
-   </div>
-  </header>
+  </div>
+</header>
+<!-- END NAVBAR -->
+
   <main class="container" id="main">
    <!-- HERO -->
    <section class="hero" id="home">
@@ -370,7 +382,7 @@
 
     <span class="project-status">
       <i class="fa-regular fa-circle-check"></i>
-      Personal Project
+      Digital Marketing Startup
     </span>
   </div>
 
@@ -712,7 +724,120 @@
      
     </div>
    </section>
-   <!-- SERVICES -->
+<!-- CLIENT REVIEWS -->
+<section class="testimonials-section" id="reviews"
+         aria-labelledby="reviews-heading">
+
+  <div class="section-head reveal">
+    <div class="kicker">CLIENT TESTIMONIALS</div>
+
+    <h2 id="reviews-heading">
+      Kind words. Real projects.
+    </h2>
+
+    <p>
+      Real feedback from clients I've worked with.
+      Discover what they say about my website development,
+      SEO and digital marketing services.
+    </p>
+  </div>
+
+  <div class="reviews-overview reveal">
+
+    <!-- GOOGLE RATING -->
+    <div class="reviews-score-panel">
+
+      <div class="reviews-source-label">
+        <i class="fa-brands fa-google" aria-hidden="true"></i>
+        Google Reviews
+      </div>
+
+      <div class="reviews-score-line">
+        <strong class="reviews-score">
+          5.0<span>/5</span>
+        </strong>
+
+        <div>
+          <div class="reviews-stars"
+               aria-label="Five out of five stars">
+            ★★★★★
+          </div>
+
+          <p class="reviews-count">
+            Based on 4 Google reviews
+          </p>
+        </div>
+      </div>
+
+      <p class="reviews-asof">
+        Rating recorded in October 2026.
+        Visit Google for the latest reviews.
+      </p>
+
+      <a
+        class="reviews-google-link"
+        href="https://share.google/8plk0joVCO0PRKPlR"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View on Google
+        <i class="fa-solid fa-arrow-up-right-from-square"
+           aria-hidden="true"></i>
+      </a>
+
+    </div>
+
+    <!-- INTRODUCTION -->
+    <div class="reviews-intro-panel">
+
+      <div class="reviews-intro-icon">
+        <i class="fa-solid fa-quote-left"
+           aria-hidden="true"></i>
+      </div>
+
+      <h3>
+        Built with care. Trusted by clients.
+      </h3>
+
+      <p>
+        Every project is an opportunity to create something
+        useful. From understanding requirements to delivering
+        the final solution, client satisfaction matters
+        throughout the process.
+      </p>
+
+      <a class="reviews-contact-link" href="#contact">
+        Let's work together
+        <i class="fa-solid fa-arrow-right"
+           aria-hidden="true"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- REVIEW CARDS GENERATED FROM reviews.js -->
+  <div
+    id="googleReviewCards"
+    class="review-cards"
+    data-limit="4"
+    aria-label="Client reviews from Google"
+  ></div>
+
+  <!-- VIEW ALL REVIEWS -->
+  <div class="reviews-view-all">
+    <a class="btn btn-primary" href="reviews">
+      View All Reviews
+      <i class="fa-solid fa-arrow-right"
+         aria-hidden="true"></i>
+    </a>
+  </div>
+
+</section>
+<!-- END CLIENT REVIEWS -->
+
+
+    <!-- SERVICES -->
    <section id="services">
     <div class="section-head reveal">
      <div class="kicker">
@@ -1145,50 +1270,150 @@
      </div>
     </div>
    </section>
-   <footer class="site-footer">
-    <nav aria-label="Services and location pages" class="seo-footer-links">
-     <a href="services/digital-marketing-kerala">
-      Web development
-     </a>
-     <a href="services/seo-services-kerala">
-      SEO services
-     </a>
-     <a href="services/digital-marketing-kerala">
-      Digital marketing
-     </a>
-     <a href="services/social-media-marketing-kerala">
-      Social media marketing
-     </a>
-     <a href="services/content-creation-kerala">
-      Content creation
-     </a>
-    </nav>
-    <div class="container footer-row">
-     <div>
-      &copy;
-      <span id="year">
-      </span>
-      Kiran Saju &middot; Web Development &middot; Digital Marketing &middot; Content Creation
-     </div>
-     <div class="footer-social">
-      <a aria-label="Instagram" href="https://www.instagram.com/kiransaju.dev/" rel="noopener noreferrer" target="_blank">
-       <i class="fa-brands fa-instagram">
-       </i>
+   
+<!-- PREMIUM PORTFOLIO FOOTER -->
+<footer class="portfolio-footer">
+
+  <div class="footer-content">
+
+    <!-- BRAND -->
+    <div class="footer-brand-block">
+
+      <a class="footer-logo" href="#home">
+        Kiran Saju<span>.</span>
       </a>
-      <a aria-label="LinkedIn" href="https://www.linkedin.com/in/ksu/" rel="noopener noreferrer" target="_blank">
-       <i class="fa-brands fa-linkedin">
-       </i>
+
+      <p class="footer-profession">
+        Freelance Web Developer & Digital Marketer
+      </p>
+
+      <p class="footer-description">
+        I help businesses build a stronger digital
+        presence through modern websites, custom
+        web applications, SEO, digital marketing,
+        and creative content.
+      </p>
+
+      <div class="footer-location">
+        <i class="fa-solid fa-location-dot"></i>
+        Kerala, India · Working Worldwide
+      </div>
+
+      <a
+        class="footer-contact-btn"
+        href="https://wa.me/917034540528"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        Let's Discuss Your Project
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
       </a>
-      <a aria-label="GitHub" href="https://github.com/kiran-saju" rel="noopener noreferrer" target="_blank">
-       <i class="fa-brands fa-github">
-       </i>
-      </a>
-     </div>
+
     </div>
-   </footer>
+
+
+    <!-- QUICK LINKS -->
+    <div class="footer-column">
+
+      <h3>Explore</h3>
+
+      <nav aria-label="Footer navigation">
+
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">My Projects</a>
+        <a href="#reviews">Client Reviews</a>
+        <a href="#skills">Skills & Expertise</a>
+        <a href="#contact">Contact Me</a>
+
+      </nav>
+
+    </div>
+
+
+    <!-- SERVICES -->
+    <div class="footer-column">
+
+      <h3>Digital Services</h3>
+
+      <nav aria-label="Footer services">
+
+        <a href="services/web-development-kerala">
+          Website Development
+        </a>
+
+        <a href="services/seo-services-kerala">
+          SEO Services
+        </a>
+
+        <a href="services/digital-marketing-kerala">
+          Digital Marketing
+        </a>
+
+        <a href="services/social-media-marketing-kerala">
+          Social Media Marketing
+        </a>
+
+        <a href="services/content-creation-kerala">
+          Content Creation
+        </a>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER BOTTOM -->
+  <div class="footer-bottom">
+
+    <p>
+      &copy; <span id="year"></span> Kiran Saju.
+      All rights reserved.
+    </p>
+
+    <div class="footer-social-links">
+
+      <a
+        href="https://www.instagram.com/kiransaju.dev/"
+        aria-label="Instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/ksu/"
+        aria-label="LinkedIn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+
+      <a
+        href="https://github.com/kiran-saju"
+        aria-label="GitHub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+<!-- END FOOTER -->
+
   </main>
   <script defer="" src="assets/site.js">
   </script>
+  <script defer="" src="assets/reviews.js"></script>
  </body>
 </html>
 
