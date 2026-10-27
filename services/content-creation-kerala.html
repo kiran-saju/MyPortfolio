@@ -80,46 +80,70 @@
   ]
 }
   </script>
- </head>
- <body>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+ <body class="service-page">
   <a class="skip" href="#content">
    Skip to content
   </a>
-  <header class="header">
-   <div class="container header-inner">
-    <a class="logo" href="../index.html">
-     Kiran
-     <span>
-      Saju.
-     </span>
-    </a>
-    <nav aria-label="Main navigation" class="nav-links">
-     <a href="../index.html#about">
-      About
-     </a>
-     <a href="../index.html#projects">
-      Projects
-     </a>
-     <a href="../index.html#services">
-      Services
-     </a>
-     <a class="nav-cta" href="../index.html#contact">
-      Hire me &nearrow;
-     </a>
+<!-- PREMIUM NAVIGATION (same look as homepage) -->
+<header id="site-header" class="service-site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="../index.html#home" aria-label="Kiran Saju – homepage">
+        <span class="name">Kiran Saju</span>
+        <span class="brand-caption">WEB · SEO · DIGITAL</span>
+      </a>
+
+      <button type="button" class="nav-toggle" id="navToggle"
+              aria-controls="primaryNav" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <span>Menu</span>
+      </button>
+
+      <div class="nav-links" id="primaryNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#reviews">Reviews</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="nav-cta" href="../index.html#contact">
+          <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+          Start a project
+        </a>
+      </div>
     </nav>
-   </div>
-  </header>
+  </div>
+</header>
+<!-- END PREMIUM NAVIGATION -->
   <main class="container" id="content">
-   <nav aria-label="Breadcrumb" class="breadcrumb">
-    <a href="../index.html">
-     Home
-    </a>
-    /
-    <a href="../index.html#services">
-     Services
-    </a>
-    / Content creation in Kerala
-   </nav>
+   
+<!-- BREADCRUMB NAVIGATION -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+
+  <a href="../index.html" class="breadcrumb-link">
+    <i class="fa-solid fa-house" aria-hidden="true"></i>
+    Home
+  </a>
+
+  <i class="fa-solid fa-chevron-right breadcrumb-separator"
+     aria-hidden="true"></i>
+
+  <a href="../index.html#services" class="breadcrumb-link">
+    Services
+  </a>
+
+  <i class="fa-solid fa-chevron-right breadcrumb-separator"
+     aria-hidden="true"></i>
+
+  <span class="breadcrumb-current" aria-current="page">
+    Content Creation
+  </span>
+
+</nav>
+<!-- END BREADCRUMB -->
+
    <section class="hero">
     <div>
      <p class="eyebrow">
@@ -262,17 +286,41 @@
      These projects demonstrate related website and online-presence experience; they are not presented as proof of specific marketing or ranking outcomes.
     </p>
     <div class="cards">
-     <article class="card proof">
-      <h3>
-       Green Pentair &mdash; product-first brand communications
-      </h3>
-      <p>
-       A client website and catalogue project with clear product categories and enquiry options, offering a basis for coordinated promotional graphics.
-      </p>
-      <a href="https://www.greenpentair.com/" rel="noopener noreferrer" target="_blank">
-       View live project &nearrow;
-      </a>
-     </article>
+
+<article class="card proof">
+  <h3>
+    Green Pentair — Website Development,
+    SEO & Digital Marketing
+  </h3>
+
+  <p>
+    Developed a responsive product catalogue website
+    with organized product listings and WhatsApp enquiry
+    integration. Created and SEO-optimized the brand's
+    Instagram business page, designed promotional posters,
+    and produced product advertising reels to strengthen
+    its online presence and support customer enquiries.
+  </p>
+
+  <div class="project-links">
+    <a
+      href="https://www.greenpentair.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View Website ↗
+    </a>
+
+    <a
+      href="https://www.instagram.com/greenpentair/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View Instagram ↗
+    </a>
+  </div>
+</article>
+
     </div>
    </section>
    <section class="section">
@@ -351,24 +399,88 @@
      <a class="btn primary" href="../index.html#contact">
       Send a project enquiry &nearrow;
      </a>
-     <a class="btn secondary" href="mailto:workwithkiransaju@gmail.com?subject=Content%20creation%20enquiry">
-      Email Kiran
-     </a>
+
+
+<a
+  class="btn secondary"
+  href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=workwithkiransaju@gmail.com&amp;su=Content%20Creation%20Enquiry"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Email Kiran ↗
+</a>
+
+
     </div>
    </section>
   </main>
-  <footer class="footer">
-   <div class="container">
-    &copy; 2026 Kiran Saju &middot; Freelance web developer and digital marketer based in Kerala &middot;
-    <a href="../index.html">
-     Portfolio
-    </a>
-    &middot;
-    <a href="https://www.instagram.com/kiransaju.dev/">
-     Instagram
-    </a>
-   </div>
-  </footer>
- </body>
+ 
+<!-- PREMIUM PORTFOLIO FOOTER -->
+<footer class="portfolio-footer">
+  <div class="footer-content">
+    <div class="footer-brand-block">
+      <a class="footer-logo" href="../index.html#home">Kiran Saju<span>.</span></a>
+      <p class="footer-profession">Freelance Web Developer &amp; Digital Marketer</p>
+      <p class="footer-description">
+        I help businesses build a stronger digital presence through modern websites,
+        custom web applications, SEO, digital marketing, and creative content.
+      </p>
+      <div class="footer-location">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        Kerala, India · Working Worldwide
+      </div>
+      <a class="footer-contact-btn" href="https://wa.me/917034540528"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        Let's Discuss Your Project
+        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Explore</h3>
+      <nav aria-label="Footer navigation">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#about">About Me</a>
+        <a href="../index.html#projects">My Projects</a>
+        <a href="../index.html#reviews">Client Reviews</a>
+        <a href="../index.html#skills">Skills &amp; Expertise</a>
+        <a href="../index.html#contact">Contact Me</a>
+      </nav>
+    </div>
+
+    <div class="footer-column">
+      <h3>Digital Services</h3>
+      <nav aria-label="Footer services">
+        <a href="web-development-kerala.html">Website Development</a>
+        <a href="seo-services-kerala.html">SEO Services</a>
+        <a href="digital-marketing-kerala.html">Digital Marketing</a>
+        <a href="social-media-marketing-kerala.html">Social Media Marketing</a>
+        <a href="content-creation-kerala.html">Content Creation</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year">2026</span> Kiran Saju. All rights reserved.</p>
+    <div class="footer-social-links">
+      <a href="https://www.instagram.com/kiransaju.dev/"
+         aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ksu/"
+         aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/kiran-saju"
+         aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- END PREMIUM PORTFOLIO FOOTER -->
+   <script src="../assets/site.js" defer></script>
+</body>
 </html>
 
