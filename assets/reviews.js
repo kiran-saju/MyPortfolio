@@ -13,7 +13,6 @@ const googleBusinessReviewLink =
 
 const googleReviews = [
 
-  // REVIEW 1 - MRIDUL VARGHESE
   {
     name: "Mridul Varghese",
     rating: 5,
@@ -31,10 +30,6 @@ for a reliable and talented website developer!`,
     url: `https://www.google.com/maps/reviews/@8.9891004,76.5437486,9z/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21KcVZtVlJkQzE1WlRodVIyOTNPRXRDWTFGUWVsRRAB!2m1!1s0xa096a0285c028bc3:0x19807ba285e9c83?hl=en-US&utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI2MTAyMF8wIJvbDyoASAJQAQ%3D%3D`
   },
 
-  // REVIEW 2 - UNNI VIJAYAN
-
-
-  // REVIEW 3 - GOPUKRISHNAN R
   {
     name: "Gopukrishnan R",
     rating: 5,
@@ -54,31 +49,22 @@ marketing... highly recommend DEV`,
     url:`https://www.google.com/maps/reviews/@8.9891004,76.5437486,9z/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21KNFJEazVUa2s0V0ZOUFYxTkRlRkY2ZW0xdFlXYxAB!2m1!1s0xa096a0285c028bc3:0x19807ba285e9c83?hl=en-US&utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI2MTAyMF8wIJvbDyoASAJQAQ%3D%3D`
   },
 
-  // REVIEW 4 - AMANUL FARISI
-  {
-    name: "Amanul Farisi",
+   {
+    name: "Admin Bin Arab Groups",
     rating: 5,
-    source: "Google Review",
+    source: "Google Local Guide",
 
-    text: `The quality of work is outstanding; as a
-startup client, I can confirm that Mr. Saju
-delivered an SEO-friendly, well-optimized website
-that remained strictly within my budgetary
-requirements.`,
+    text: 
+`We had a great experience working with Kiran Saju on our Bin Arab Group website(www.binarab.net). 
+He understood our business requirements and delivered a modern, professional, and well-structured website that represents our brand effectively.
+His attention to detail, creative approach to website design, and technical knowledge were impressive. He was open to our suggestions, communicated clearly, and focused on making the website visually appealing, user-friendly, and responsive across devices.
+We truly appreciate his dedication and professionalism throughout the project. 
+We highly recommend Kiran Saju to anyone looking for a reliable freelance web developer for professional website design and development.
+`,
 
-    url: `https://www.google.com/maps/reviews/@8.9891004,76.5437486,9z/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25oWWVWODJTM1psWkRSblEya3hjMGhMTUc5MFJsRRAB!2m1!1s0xa096a0285c028bc3:0x19807ba285e9c83?hl=en-US&utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI2MTAyMF8wIJvbDyoASAJQAQ%3D%3D`
+    url: "https://www.google.com/maps/contrib/109762038564438621584/reviews/@9.2852937,76.5760918,15z/data=!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D"
   },
 
- // REVIEW 5 - NEW CLIENT
-  {
-  name: "Arizran Tech",
-  rating: 5,
-  source: "Google Review",
-  text: `If you're launching a business or looking to level up your platform, 
-  Kiran Saju is your guy! He brought my digital marketing startup vision to life and optimized it so well that our load times and user experience improved dramatically. 
-  Super skilled, creative, and dependable. Thanks, Kiran!`,
-  url: `https://www.google.com/maps/reviews/@8.9891004,76.5437486,9z/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT204NVNVaHpPRjlsWjBZMFVFeHhXSFJTYmxZNWNVRRAB!2m1!1s0xa096a0285c028bc3:0x19807ba285e9c83?hl=en-GB&utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI2MTAyMF8wIJvbDyoASAJQAQ%3D%3D`
-  },
     {
     name: "Unni Vijayan",
     rating: 5,
